@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div id="app" class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="is-size-2">Convertor</h1>
+                    <div class="field">
+                        <div class="control">
+                            <input v-model="numero" autofocus class="input" type="text" placeholder="Número para converter">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <p>Convertir desde...</p>
+                            <label class="radio">
+                                <input v-model="Base" value="2" type="radio" name="convertor">
+                                Binario
+                            </label>
+                            <label class="radio">
+                                <input v-model="Base" value="8" type="radio" name="convertor">
+                                Octal
+                            </label>
+                            <label class="radio">
+                                <input v-model="Base" value="10" type="radio" name="convertor">
+                                Decimal
+                            </label>
+                            <label class="radio">
+                                <input v-model="Base" value="16" type="radio" name="convertor">
+                                Hexadecimal
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field has-addons">
+                        <div class="control">
+                            <a class="button is-success">
+                                Binário
+                            </a>
+                        </div>
+                        <div class="control is-expanded">
+                            <input v-model="binario" readonly class="input" type="text" placeholder="Binário">
+                        </div>
+  
+                    </div>
+                    <div class="field has-addons">
+
+                        <div class="control">
+                            <a class="button is-success">
+                                Octal
+                            </a>
+                        </div>
+                        <div class="control is-expanded">
+                            <input v-model="octal" readonly class="input" type="text" placeholder="Octal">
+                        </div>
+
+                    </div>
+                    <div class="field has-addons">
+
+                        <div class="control">
+                            <a class="button is-success">
+                                Decimal
+                            </a>
+                        </div>
+                        <div class="control is-expanded">
+                            <input v-model="decimal" readonly class="input" type="text" placeholder="Decimal">
+                        </div>
+
+                    </div>
+                    <div class="field has-addons">
+
+                        <div class="control">
+                            <a class="button is-success">
+                                Hexadecimal
+                            </a>
+                        </div>
+                        <div class="control is-expanded">
+                            <input v-model="hexadecimal" readonly class="input" type="text" placeholder="Hexadecimal">
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
