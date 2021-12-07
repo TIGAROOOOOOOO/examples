@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <title>Conversor de bases</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <form>
+    <div class="wrapper">
+        <div class="containee">
+            <h1>Conversor</h1>
+            Binario<input id="bin" class="output" placeholder ="Binário"onkeypress="return (event.charCode !=8 && event.charCode ==0 || ((event.charCode >= 48 && event.charCode <= 49)))"  spellcheck="false">
+            Octal<input id="oct" class="output" placeholder ="Octal"onkeypress="return (event.charCode !=8 && event.charCode ==0 ||  ((event.charCode >= 48 && event.charCode <= 55)))" spellcheck="false">
+            Decimal <input id="dec" class="output" placeholder ="Decimal"onkeypress="return (event.charCode !=8 && event.charCode ==0 || ((event.charCode >= 48 && event.charCode <= 57)))"  spellcheck="false"> 
+            Hexadecimal<input id="hex" class="output"  placeholder ="Hexadecimal" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ((event.charCode >= 48 && event.charCode <= 57)|| (event.charCode >= 97 && event.charCode <= 102) ))"  spellcheck="false">
+           <a> <input type="reset" class="limpar" value="Limpar">
+        </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer class="footer text-center fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4"><a href="outros.html">Outros Trabalhos</a></h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="UFP-INF-TP01-TIAGO.L-TIAGO.B-html/index.html"><i class="fas fa-file"></i></a>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Qualquer erro Contacte</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:tiago_lima213@hotmail.com?subject=Testing out mailto!&body=This is only a test!"><i class="fas fa-envelope-square"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:tiagonbarreto@gmail.com?subject=Testing out mailto!&body=This is only a test!"><i class="fas fa-envelope-square"></i></a>
+            </div>
+            <!-- Footer About Text-->
+          
+        </div>
+    </div>
+</footer>   
+<!--
+    é um limitador de numeros pressinados no teclado pelo utilizador , Basicamente tem desde o numero 0 ao 9 e depois do a ao f // 48-57 \\ // 97-102 \\
+    onkeypress="return (event.charCode !=8 && event.charCode ==0 || ((event.charCode >= 48 && event.charCode <= 57)|| (event.charCode >= 97 && event.charCode <= 102) ))"
+
+-->
+</html>
